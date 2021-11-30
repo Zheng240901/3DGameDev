@@ -10,7 +10,9 @@ public class TimerSetting : MonoBehaviour
 
     public bool GameAktif = true;
     public GameObject CanvasLose;
-    
+    public GameObject CanvasWin;
+    public WinLoose winLooseScript;
+
     void SetText()
     {
         int Menit = Mathf.FloorToInt(Waktu / 60); //1
@@ -32,7 +34,7 @@ public class TimerSetting : MonoBehaviour
             }
         }
 
-        if(GameAktif && Waktu <=0)
+        if (GameAktif && Waktu <= 0)
         {
             Debug.Log(" You Lose!");
             CanvasLose.SetActive(true);

@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Mainmenu : MonoBehaviour
 {
-   public void ExitButton()
+    public void ExitButton()
     {
         Application.Quit();
         Debug.Log("Game closed");
@@ -13,6 +13,6 @@ public class Mainmenu : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("Game");
+       SceneManager.LoadScene("assignment UI");
     }
 }
